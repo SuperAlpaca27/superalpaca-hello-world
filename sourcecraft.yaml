@@ -1,5 +1,5 @@
 name: superalpaca-hello-world-3
-description: some description. An edit. Another one.
+description: some description. An edit. Another one. And another one.
 version: 1
 summary: some summary
 base: ubuntu@24.04
