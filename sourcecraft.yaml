@@ -1,7 +1,8 @@
-name: superalpaca-hello-world-3
-description: some description. An edit. Another one. And another one.
+name: how-many-golems-fit-in-a-plane
+description: |
+  "How many golems can fit in a plane?" Will you be able to solve this riddle?
 version: 1
-summary: some summary
+summary: How many golems can fit in a plane?
 base: ubuntu@24.04
 platforms:
   amd64:
