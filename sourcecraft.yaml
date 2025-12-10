@@ -13,13 +13,18 @@ platforms:
   # riscv64:
 
 parts:
-  pretty:
-    source: sourcecraft:bowenfan-pretty
-    source-channel: 0.2-24.04/edge
-    plugin: nil
+  # pretty:
+  #   source: sourcecraft:bowenfan-pretty
+  #   source-channel: 0.2-24.04/edge
+  #   plugin: nil
     # override-stage: ""
   text:
     source: sourcecraft:bowenfan-text
     source-channel: 0.1-24.04/edge
+    plugin: nil
+    # override-stage: ""
+  bee:
+    source: sourcecraft:superalpaca-bee
+    source-channel: 1/edge
     plugin: nil
     # override-stage: ""
