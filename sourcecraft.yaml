@@ -1,30 +1,14 @@
-name: how-many-golems-fit-in-a-plane
+name: superalpaca-bee
 description: |
-  "How many golems can fit in a plane?" Will you be able to solve this riddle?
+  Bzzzzzzzzzzzzzzzzzzzzzzz
 version: 1
-summary: How many golems can fit in a plane? ...
+summary: Bzzzzzzzzzzzzzzzzzzzzzzz
 base: ubuntu@24.04
 platforms:
   amd64:
-  # arm64:
-  # armhf:
-  # ppc64el:
-  # s390x:
-  # riscv64:
 
 parts:
-  # pretty:
-  #   source: sourcecraft:bowenfan-pretty
-  #   source-channel: 0.2-24.04/edge
-  #   plugin: nil
-    # override-stage: ""
   text:
     source: sourcecraft:bowenfan-text
     source-channel: 0.1-24.04/edge
     plugin: nil
-    # override-stage: ""
-  bee:
-    source: sourcecraft:superalpaca-bee
-    source-channel: 1/edge
-    plugin: nil
-    # override-stage: ""
