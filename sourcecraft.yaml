@@ -7,8 +7,8 @@ base: ubuntu@24.04
 platforms:
   amd64:
 
-parts:
-  text:
-    source: sourcecraft:bowenfan-text
-    source-channel: 0.1-24.04/edge
-    plugin: nil
+# parts:
+#   text:
+#     source: sourcecraft:bowenfan-text
+#     source-channel: 0.1-24.04/edge
+#     plugin: nil
