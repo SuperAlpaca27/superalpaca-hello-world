@@ -10,6 +10,7 @@ platforms:
   # ppc64el:
   # s390x:
   # riscv64:
+  # .
 
 parts:
   pretty:
