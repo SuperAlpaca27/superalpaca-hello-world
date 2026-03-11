@@ -1,0 +1,50 @@
+# This file configures Sourcecraft.
+
+# (Required)
+# The source package name, no spaces
+name: superalpaca-curl
+
+# (Required)
+# The source package version
+version: 2eebc58
+
+# (Required)
+# Version of the build base OS
+base: ubuntu@26.04
+
+# (Recommended)
+# SPDX license identifier or 'proprietary' value
+# More information available at https://spdx.org/licenses/
+# license: SPDX-identifier
+
+# (Recommended)
+title: superalpaca-curl
+
+# (Required)
+summary: Curl is a command-line tool for transferring data using URL syntax.
+
+# (Required)
+description: |
+    ...
+license: curl
+source-code: https://github.com/curl/curl
+
+# (Required)
+# Platforms that package targets
+platforms:
+  amd64:
+
+parts:
+  curl:
+    source: .
+    plugin: autotools
+    build-environment:
+      - LDFLAGS: "-Wl,-rpath,'\\$\\$ORIGIN/../lib'"
+    build-packages:
+      - libpsl-dev
+      - libssl-dev
+    autotools-configure-parameters:
+      - --prefix=/usr
+      - --with-openssl
+    stage-packages:
+      - libpsl5t64
