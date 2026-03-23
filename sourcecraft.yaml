@@ -48,3 +48,5 @@ parts:
       - --with-openssl
     stage-packages:
       - libpsl5t64
+    build-snaps:
+      - go/1.22/stable
