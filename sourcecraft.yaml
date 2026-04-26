@@ -10,5 +10,12 @@ platforms:
 parts:
   thing:
     source: bld:superalpaca-curl
-    source-channel: curl/edge
+    source-channel: curl/beta
     plugin: nil
+    # TODO: test build-snaps + stage-snaps
+  tmp:
+    plugin: nil
+    build-snaps:
+      - go/latest/beta
+    stage-snaps:
+      - go/1.17
