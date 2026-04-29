@@ -16,6 +16,6 @@ parts:
   tmp:
     plugin: nil
     build-snaps:
-      - go/latest/stable
+      - go/latest/edge
     stage-snaps:
       - go/1.17
