@@ -18,4 +18,4 @@ parts:
     build-snaps:
       - go/latest/edge
     stage-snaps:
-      - go/1.17
+      - go/1.17/edge
