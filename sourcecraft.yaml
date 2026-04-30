@@ -10,5 +10,5 @@ platforms:
 parts:
   thing:
     source: bld:superalpaca-curl
-    source-channel: curl/beta
+    source-channel: curl/edge
     plugin: nil
