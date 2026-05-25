@@ -9,6 +9,6 @@ platforms:
 
 parts:
   thing:
-    source: bld:superalpaca-curl
+    source: bld:superalpaca-bee
     source-channel: curl/edge
     plugin: nil
