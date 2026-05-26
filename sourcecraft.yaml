@@ -9,6 +9,6 @@ platforms:
 
 parts:
   thing:
-    source: sourcecraft:superalpaca-bee
+    source: bld:superalpaca-bee
     source-channel: beellab/edge
     plugin: nil
