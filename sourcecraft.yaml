@@ -2,7 +2,7 @@ name: superalpaca-bee
 description: |
   Bzzzzzzzzzzzzzzzzzzzzzzzzzz
 version: "not-an-int"
-summary: Bzzzzzzzzzzzzzzzzzzzzzzz
+summary: Bzzzzzzzzzzzzzzzzzzzzzzzz
 base: ubuntu@24.04
 platforms:
   amd64:
