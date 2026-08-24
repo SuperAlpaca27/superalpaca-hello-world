@@ -8,8 +8,8 @@ platforms:
   amd64:
   s390x:
 
-# parts:
-#   thing:
-#     source: bld:superalpaca-bee
-#     source-channel: beellab/edge
-#     plugin: nil
+parts:
+  thing:
+    source: bld:superalpaca-bee
+    source-channel: beellab/edge
+    plugin: nil
