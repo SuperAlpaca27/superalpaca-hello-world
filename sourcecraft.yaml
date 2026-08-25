@@ -10,6 +10,6 @@ platforms:
 
 parts:
   thing:
-    source: bld:superalpaca-bee
-    source-channel: beellab/edge
     plugin: nil
+    source: .
+    build-snaps: [go/1.22/stable]
