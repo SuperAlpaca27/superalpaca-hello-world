@@ -5,11 +5,7 @@ version: "not-an-int"
 summary: Bzzzzzzzzzzzzzzzzzzzzzzzz
 base: ubuntu@24.04
 platforms:
-  boom:
-    build-on:
-      - amd64
-    build-for:
-      - all
+  all:
 
 parts:
   thing:
