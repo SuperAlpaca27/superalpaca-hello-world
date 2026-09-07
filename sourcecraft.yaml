@@ -5,7 +5,8 @@ version: "not-an-int"
 summary: Bzzzzzzzzzzzzzzzzzzzzzzzz
 base: ubuntu@24.04
 platforms:
-  all:
+  amd64:
+  s390x:
 
 parts:
   thing:
