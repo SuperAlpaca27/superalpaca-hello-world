@@ -1,0 +1,76 @@
+# This file configures Bincraft.
+
+# (Required)
+# The source package name, no spaces
+name: superalpaca-curl
+
+# (Required)
+# The source package version
+version: 8.14.0
+
+# (Required)
+# Version of the build base OS
+base: ubuntu@26.04
+
+# (Recommended)
+# SPDX license identifier or 'proprietary' value
+# More information available at https://spdx.org/licenses/
+# license: SPDX-identifier
+
+# (Recommended)
+title: curl (superalpaca)
+
+# (Required)
+summary: Curl is a command-line tool for transferring data using URL syntax
+
+# (Required)
+description: |
+  A test bin by superalpaca, using a clone of the [curl
+  project](https://github.com/curl/curl).
+
+  Learn how to use curl by reading [the
+  manpage](https://curl.se/docs/manpage.html) or [everything
+  curl](https://everything.curl.dev).
+
+  libcurl is the library curl is using to do its job. It is readily available
+  to be used by your software. Read [the libcurl
+  manpage](https://curl.se/libcurl/c/libcurl.html) to learn how.
+
+license: curl
+source-code: https://github.com/curl/curl
+
+# (Required)
+# Platforms that package targets
+platforms:
+  amd64:
+
+parts:
+  curl:
+    source: .
+    plugin: autotools
+    build-environment:
+      - LDFLAGS: "-Wl,-rpath,'\\$\\$ORIGIN/../lib'"
+    build-packages:
+      - libpsl-dev
+      - libssl-dev
+    autotools-configure-parameters:
+      - --prefix=/usr
+      - --with-openssl
+    stage-packages:
+      - libpsl5t64
+  go:
+    plugin: nil
+    source: .
+    build-snaps: [go/latest/edge]
+  juju:
+    plugin: nil
+    source: .
+    build-snaps: [juju/latest/edge]
+  lxd:
+    plugin: nil
+    source: .
+    build-snaps: [lxd/latest/edge]
+  enterprise-store:
+    plugin: nil
+    source: .
+    build-snaps: [enterprise-store/latest/edge]
