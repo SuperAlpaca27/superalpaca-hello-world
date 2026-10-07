@@ -58,19 +58,19 @@ parts:
       - --with-openssl
     stage-packages:
       - libpsl5t64
-  go:
-    plugin: nil
-    source: .
-    build-snaps: [go/latest/edge]
-  juju:
-    plugin: nil
-    source: .
-    build-snaps: [juju/latest/edge]
-  lxd:
-    plugin: nil
-    source: .
-    build-snaps: [lxd/latest/edge]
-  enterprise-store:
-    plugin: nil
-    source: .
-    build-snaps: [enterprise-store/latest/edge]
+  # go:
+  #   plugin: nil
+  #   source: .
+  #   build-snaps: [go/latest/edge]
+  # juju:
+  #   plugin: nil
+  #   source: .
+  #   build-snaps: [juju/latest/edge]
+  # lxd:
+  #   plugin: nil
+  #   source: .
+  #   build-snaps: [lxd/latest/edge]
+  # enterprise-store:
+  #   plugin: nil
+  #   source: .
+  #   build-snaps: [enterprise-store/latest/edge]
